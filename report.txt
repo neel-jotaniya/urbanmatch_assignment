@@ -1,0 +1,19 @@
+Task 1: Add User Update Endpoint
+ - Attempt to find user from database for given ID and raise appropiate error if there is no user for given ID 
+ - If user want to update email and new email is alredy used by another user then rais appropiate error 
+ - Otherwise, update all given field with new data 
+
+Task 2: Add User Deletion Endpoint
+ - Attempt to find user from database for given ID and raise appropiate error if there is no user for given ID 
+ - Delete the user if found
+
+Task 3: Find Matches for a User
+ - For given user, Find users whose gender is opposite, live in the same city, share at least one same interest, and have an age difference of no more than 5 years. 
+ - I assume that user is hetrosexual and find matchs with the opposite gender.
+
+ Task 4: Add Email Validation
+  - I used EmailStr type from Pydantic to validate email field 
+  - I also added a conditional check in the Create User Endpoint to avoid creating a duplicate user by verifying if the email already exists in the database.
+
+
+
